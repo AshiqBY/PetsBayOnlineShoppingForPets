@@ -1,0 +1,99 @@
+﻿@model PetsOnlineShop_PetsBay.Order_Details
+
+@{
+    ViewBag.Title = "Details";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<h2>Details</h2>
+
+<div>
+    <h4>Order_Details</h4>
+    <hr />
+    <dl class="dl-horizontal">
+        <dt>
+            @Html.DisplayNameFor(model => model.Order_Details_ShippingAddress)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Order_Details_ShippingAddress)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Order_Details_ShippingCity)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Order_Details_ShippingCity)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Order_Details_ShippingState)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Order_Details_ShippingState)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Order_Details_ShippingPincode)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Order_Details_ShippingPincode)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Order_Details_DeliveryDate)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Order_Details_DeliveryDate)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Order_Details_ModeOfPayment)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Order_Details_ModeOfPayment)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Order_Details_TotalPrice)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Order_Details_TotalPrice)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Order_Details_Flag)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Order_Details_Flag)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Customer_Details.Customer_Name)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Customer_Details.Customer_Name)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Pet_Details.Pet_Category)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Pet_Details.Pet_Category)
+        </dd>
+
+    </dl>
+</div>
+<p>
+    @Html.ActionLink("Edit", "Edit", new { id = Model.Id }) |
+    @Html.ActionLink("Back to List", "Index")
+</p>
