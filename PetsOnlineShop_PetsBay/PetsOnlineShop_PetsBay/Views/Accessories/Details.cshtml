@@ -1,0 +1,75 @@
+﻿@model PetsOnlineShop_PetsBay.Accessories_Details
+
+@{
+    ViewBag.Title = "Details";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<h2>Details</h2>
+
+<div>
+    <h4>Accessories_Details</h4>
+    <hr />
+    <dl class="dl-horizontal">
+        <dt>
+            @Html.DisplayNameFor(model => model.Accessories_Name)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Accessories_Name)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Accessories_Quantity)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Accessories_Quantity)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Accessories_Price)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Accessories_Price)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Accessories_Description)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Accessories_Description)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Accessories_ImagePath)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Accessories_ImagePath)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Accessories_ImageName)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Accessories_ImageName)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Pet_Details.Pet_Category)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Pet_Details.Pet_Category)
+        </dd>
+
+    </dl>
+</div>
+<p>
+    @Html.ActionLink("Edit", "Edit", new { id = Model.Id }) |
+    @Html.ActionLink("Back to List", "Index")
+</p>
