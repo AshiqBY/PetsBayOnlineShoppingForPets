@@ -1,0 +1,107 @@
+﻿@model PetsOnlineShop_PetsBay.Seller_Details
+
+@{
+    ViewBag.Title = "Details";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<h2>Details</h2>
+
+<div>
+    <h4>Seller_Details</h4>
+    <hr />
+    <dl class="dl-horizontal">
+        <dt>
+            @Html.DisplayNameFor(model => model.Seller_Name)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Seller_Name)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Seller_Address)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Seller_Address)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Seller_City)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Seller_City)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Seller_State)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Seller_State)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Seller_Pincode)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Seller_Pincode)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Seller_EmailId)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Seller_EmailId)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Seller_MobileNo)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Seller_MobileNo)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Seller_UserId)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Seller_UserId)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Seller_ImagePath)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Seller_ImagePath)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Seller_ImageName)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Seller_ImageName)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Seller_Password)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Seller_Password)
+        </dd>
+
+    </dl>
+</div>
+<p>
+    @Html.ActionLink("Edit", "Edit", new { id = Model.Id }) |
+    @Html.ActionLink("Back to List", "Index")
+</p>
