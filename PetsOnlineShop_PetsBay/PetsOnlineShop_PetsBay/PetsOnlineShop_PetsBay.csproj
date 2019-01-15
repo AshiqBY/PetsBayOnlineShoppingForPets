@@ -166,6 +166,7 @@
     </Compile>
     <Compile Include="Controllers\CustomerController.cs" />
     <Compile Include="Controllers\HomeController.cs" />
+    <Compile Include="Controllers\PetsController.cs" />
     <Compile Include="Controllers\SellerController.cs" />
     <Compile Include="Customer_Details.cs">
       <DependentUpon>Model1.tt</DependentUpon>
@@ -271,6 +272,11 @@
     <Content Include="Views\Seller\Details.cshtml" />
     <Content Include="Views\Seller\Edit.cshtml" />
     <Content Include="Views\Seller\Index.cshtml" />
+    <Content Include="Views\Pets\Create.cshtml" />
+    <Content Include="Views\Pets\Delete.cshtml" />
+    <Content Include="Views\Pets\Details.cshtml" />
+    <Content Include="Views\Pets\Edit.cshtml" />
+    <Content Include="Views\Pets\Index.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />

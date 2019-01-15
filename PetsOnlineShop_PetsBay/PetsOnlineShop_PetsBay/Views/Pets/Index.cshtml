@@ -1,0 +1,100 @@
+﻿@model IEnumerable<PetsOnlineShop_PetsBay.Pet_Details>
+
+@{
+    ViewBag.Title = "Index";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<h2>Index</h2>
+
+<p>
+    @Html.ActionLink("Create New", "Create")
+</p>
+<table class="table">
+    <tr>
+        <th>
+            @Html.DisplayNameFor(model => model.Pet_Category)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Pet_Description)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Pet_Color)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Pet_Age)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Pet_Weight)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Pet_Gender)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Pet_AvailableQuantity)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Pet_Price)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Pet_ImagePath)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Pet_ImageName)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Flag)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Seller_Details.Seller_Name)
+        </th>
+        <th></th>
+    </tr>
+
+@foreach (var item in Model) {
+    <tr>
+        <td>
+            @Html.DisplayFor(modelItem => item.Pet_Category)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.Pet_Description)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.Pet_Color)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.Pet_Age)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.Pet_Weight)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.Pet_Gender)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.Pet_AvailableQuantity)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.Pet_Price)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.Pet_ImagePath)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.Pet_ImageName)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.Flag)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.Seller_Details.Seller_Name)
+        </td>
+        <td>
+            @Html.ActionLink("Edit", "Edit", new { id=item.Id }) |
+            @Html.ActionLink("Details", "Details", new { id=item.Id }) |
+            @Html.ActionLink("Delete", "Delete", new { id=item.Id })
+        </td>
+    </tr>
+}
+
+</table>
