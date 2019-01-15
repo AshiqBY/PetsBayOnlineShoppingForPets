@@ -166,6 +166,7 @@
     </Compile>
     <Compile Include="Controllers\CustomerController.cs" />
     <Compile Include="Controllers\HomeController.cs" />
+    <Compile Include="Controllers\OrderCartController.cs" />
     <Compile Include="Controllers\OrderController.cs" />
     <Compile Include="Controllers\PetsController.cs" />
     <Compile Include="Controllers\SellerController.cs" />
@@ -283,6 +284,11 @@
     <Content Include="Views\Order\Details.cshtml" />
     <Content Include="Views\Order\Edit.cshtml" />
     <Content Include="Views\Order\Index.cshtml" />
+    <Content Include="Views\OrderCart\Create.cshtml" />
+    <Content Include="Views\OrderCart\Delete.cshtml" />
+    <Content Include="Views\OrderCart\Details.cshtml" />
+    <Content Include="Views\OrderCart\Edit.cshtml" />
+    <Content Include="Views\OrderCart\Index.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />

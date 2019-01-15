@@ -1,0 +1,97 @@
+﻿@model PetsOnlineShop_PetsBay.Order_Cart
+
+@{
+    ViewBag.Title = "Delete";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<h2>Delete</h2>
+
+<h3>Are you sure you want to delete this?</h3>
+<div>
+    <h4>Order_Cart</h4>
+    <hr />
+    <dl class="dl-horizontal">
+        <dt>
+            @Html.DisplayNameFor(model => model.Order_Quantity)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Order_Quantity)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Order_Price)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Order_Price)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Order_Date)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Order_Date)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Order_ShippingDate)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Order_ShippingDate)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Order_Flag)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Order_Flag)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Order_Status)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Order_Status)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Category_Details.Pet_Breed)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Category_Details.Pet_Breed)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Customer_Details.Customer_Name)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Customer_Details.Customer_Name)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Pet_Details.Pet_Category)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Pet_Details.Pet_Category)
+        </dd>
+
+    </dl>
+
+    @using (Html.BeginForm()) {
+        @Html.AntiForgeryToken()
+
+        <div class="form-actions no-color">
+            <input type="submit" value="Delete" class="btn btn-default" /> |
+            @Html.ActionLink("Back to List", "Index")
+        </div>
+    }
+</div>

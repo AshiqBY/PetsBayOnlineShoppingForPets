@@ -1,0 +1,82 @@
+﻿@model IEnumerable<PetsOnlineShop_PetsBay.Order_Cart>
+
+@{
+    ViewBag.Title = "Index";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<h2>Index</h2>
+
+<p>
+    @Html.ActionLink("Create New", "Create")
+</p>
+<table class="table">
+    <tr>
+        <th>
+            @Html.DisplayNameFor(model => model.Order_Quantity)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Order_Price)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Order_Date)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Order_ShippingDate)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Order_Flag)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Order_Status)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Category_Details.Pet_Breed)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Customer_Details.Customer_Name)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Pet_Details.Pet_Category)
+        </th>
+        <th></th>
+    </tr>
+
+@foreach (var item in Model) {
+    <tr>
+        <td>
+            @Html.DisplayFor(modelItem => item.Order_Quantity)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.Order_Price)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.Order_Date)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.Order_ShippingDate)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.Order_Flag)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.Order_Status)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.Category_Details.Pet_Breed)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.Customer_Details.Customer_Name)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.Pet_Details.Pet_Category)
+        </td>
+        <td>
+            @Html.ActionLink("Edit", "Edit", new { id=item.Id }) |
+            @Html.ActionLink("Details", "Details", new { id=item.Id }) |
+            @Html.ActionLink("Delete", "Delete", new { id=item.Id })
+        </td>
+    </tr>
+}
+
+</table>
